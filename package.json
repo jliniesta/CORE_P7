@@ -1,0 +1,16 @@
+{
+    "name": "Entrega7_quizexpress",
+    "author": "CORE-2020",
+    "license": "GNU",
+    "version": "0.1.2",
+    "info": {
+        "githubURL": "CORE-2020/Entrega7_quizexpress",
+        "serverUrl": "https://autocorector.dit.upm.es/",
+        "courseId": "8249",
+        "assignmentId": "78553"
+    },
+    "dependencies": {
+        "autocorector": "^1.5.0",
+        "express-generator": "^4.16.1"
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "quiz-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "super": "supervisor ./bin/www",
+    //Los siguientes scripts para aplicar la migración y el seeder
+    "migrate": "sequelize db:migrate --url sqlite://$(pwd)/quiz.sqlite",  
+    "seed": "sequelize db:seed:all --url sqlite://$(pwd)/quiz.sqlite",  
+    "migrate_win": "sequelize db:migrate --url sqlite://%cd%/quiz.sqlite",  
+    "seed_win": "sequelize db:seed:all --url sqlite://%cd%/quiz.sqlite" 
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-partials": "^0.3.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1",
+    "supervisor": "^0.12.0"
+  }
+}

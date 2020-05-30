@@ -1,0 +1,13 @@
+<section>
+    <h2>
+        Lista de Quizzes
+    </h2>
+    
+    <%# Bucle for que recorre el array quizzes que me pasan como parametro a la llamada a res.render%>
+    <% for (let quiz of quizzes) { %> 
+        <p>
+            <%= quiz.question %>: <%= quiz.answer %>
+        </p>
+    <% } %>
+
+</section>
